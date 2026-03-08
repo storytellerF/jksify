@@ -11,7 +11,7 @@ import org.gradle.api.tasks.TaskAction
 import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.register
 import java.io.FileOutputStream
-import java.util.Base64
+import java.util.*
 
 abstract class DecodeBase64ToStoreFileTask : DefaultTask() {
 

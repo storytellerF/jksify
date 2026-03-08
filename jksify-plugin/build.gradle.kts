@@ -17,3 +17,17 @@ gradlePlugin {
         }
     }
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/storytellerF/jksify")
+            // 最好通过命令行传递
+            credentials {
+                username = project.findProperty("gpr.user") as String
+                password = project.findProperty("gpr.key") as String
+            }
+        }
+    }
+}
