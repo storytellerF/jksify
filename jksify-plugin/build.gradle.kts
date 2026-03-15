@@ -9,7 +9,7 @@ println("group: $group, version: $version")
 gradlePlugin {
     plugins {
         create("jksify") {
-            id = "com.storytellerF.jksify"
+            id = "com.storyteller_f.jksify"
             implementationClass = "com.storyteller_f.jksify.JksifyPlugin"
         }
     }
